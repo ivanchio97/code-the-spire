@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.game{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height:100vh;
+}
+main{
+  display:flex;
+  justify-content: space-around;
+  width: 80%;
+  height:110px;
+  margin-bottom: -28px;
+  gap: 50px;
+}
+
+.ground{
+  color:red;
+  background: url('../assets/terrenito.png');
+  height: 120px;
+  width:1000px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: -10px;
+}
+.actions{
+  padding: 10px;
+  height:150px;
+  margin-bottom: -30px;
+  width:1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.actions div{
+  position: relative;
+}
+.energy{
+  background-image: url("../assets/star.png");
+  width: 73px;
+  height: 70px;
+  background-size: cover;
+  text-align: center;
+  line-height: 70px;
+  font-size: 36px;
+  color: #6D4B27;
+  font-weight: 700;
+  cursor: pointer;
+  
+}
+.energy:hover{
+  filter: drop-shadow(0 0 15px #dbe911);
+}
+.actions button{
+  background-image: url("../assets/button1.png");
+  width: 128px;
+  height: 128px;
+  border:none;
+  border-radius: 10px;
+  font-size: 45px;
+}
+.cost{
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  background-image: url("../assets/star.png");
+  background-size: cover;
+  top:-10px;
+  left: -15px;
+  line-height: 43px;
+  text-align: center;
+  font-size: 20px;
+  color: #6D4B27;
+  font-weight: 700;
+
+}
+.actions button:hover{
+  box-shadow: 0px 0px 15px #6D4B27;
+  cursor: pointer;
+}
+.player{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.player img{
+  height:100%;
+}
+.enemy{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  
+}
+.enemy img{
+  height: 80px;
+}
+.enemies{
+  display: flex;
+  height: 124px;
+  align-items: flex-end;
+  
+}
+.attempts{
+  position: absolute;
+  left:-15px;
+  background-color: #DE7E4F;
+  bottom:70px;
+  width: 140px;
+  text-align: right;
+  padding-right: 10px;
+  height: 40px;
+  line-height: 30px;
+  border: 5px solid #C66A3E;
+  border-radius: 10px;
+  color: rgb(34, 16, 2);
+  font-weight: 600;
+  font-size: 20px;
+  cursor:pointer;
+}

@@ -1,0 +1,118 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body{
+  background-image: url('./src/assets/down_background.png');
+  background-position: bottom center;
+  background-size:contain;
+  background-repeat: no-repeat;
+  height:100vh;
+  position:relative;
+  font-family: "Nunito", sans-serif;
+  overflow: hidden;
+}
+body::after{
+  content: '';
+  position: fixed;
+  top:0;
+  height:40%;
+  width:250%;
+  background-size: contain;
+  background-image: url('./src/assets/up_background.png');
+  animation: mover 50s linear infinite;
+  z-index: -1;
+}
+.health{
+  position: relative;
+}
+.health .label{
+  position: absolute;
+  color: white;
+  font-weight: 600;
+  font-size: 19px;
+  text-shadow: 0 0 20px #1e0104;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  
+}
+.bar{
+  width: 100px;
+  border: 1px solid black;
+}
+.block{
+  position: absolute;
+  right: -33px;
+  top:-7px;
+  color: rgb(7, 152, 255);
+  font-weight: 500;
+}
+.blockActive{
+  border: 4px solid rgb(7, 152, 255);
+}
+.hide{
+  display: none;
+}
+
+.pegarEnemigo {
+  animation: pegarEnemigo 1s ease-in-out;
+}
+.pegarJugador{
+  animation: pegarJugador 1s ease-in-out;
+}
+
+@keyframes pegarEnemigo{
+  0% {margin-right: 0;}
+  50% {margin-right: 80px;}
+  100% {margin-right: 0;}
+}
+
+@keyframes pegarJugador{
+  0% {margin-left: 0;}
+  50% {margin-left: 80px;}
+  100% {margin-left: 0;}
+}
+
+@keyframes mover{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-50%);
+  }
+}
+
+.damage{
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+  -webkit-text-stroke: 1px rgb(47, 46, 46);
+  top:50px;
+  overflow: hidden;
+  width: 0;
+  z-index: 100;
+}
+.damageUp{
+  animation: damageAnimation 0.8s linear ;
+}
+@keyframes damageAnimation{
+  0% {
+    top:50px;
+    font-size: 20px;
+    width: auto;
+  }
+  50%{
+    top:30px;
+    font-size: 25px;
+    width: auto;
+  }
+  100%{
+    top:5px;
+    font-size: 30px;
+    width: auto;
+  }
+}
