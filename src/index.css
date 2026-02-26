@@ -5,8 +5,9 @@
   user-select: none;
 }
 body{
-  background-image: url('./src/assets/down_background.png');
+  background-image: url('/down_background.png');
   background-position: bottom center;
+  background-color: #C3E3FF;
   background-size:contain;
   background-repeat: no-repeat;
   height:100vh;
@@ -21,7 +22,7 @@ body::after{
   height:40%;
   width:250%;
   background-size: contain;
-  background-image: url('./src/assets/up_background.png');
+  background-image: url('/up_background.png');
   animation: mover 50s linear infinite;
   z-index: -1;
 }
