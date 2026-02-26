@@ -17,7 +17,7 @@ export function GameProvider({children}){
     health: 70,
     maxHealth: 70,
     turn:1,
-    attempts: 3,
+    attempts: 4,
     hurted: false,
     block: 0
   }

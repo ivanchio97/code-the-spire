@@ -26,7 +26,7 @@ const Froggy = ({ id, combatEvent, setAttakedPlayer, setDanioJugador }) => {
   const [animation, setAnimation] = useState(false)
   const [danio, setDanio] = useState(0)
 
-  const actions = ["🛡","⚔","❓"]
+  const actions = ["🛡","🛡","⚔","❓"]
 
   // 🎯 IA del enemigo por turno
   useEffect(()=>{
@@ -46,7 +46,7 @@ const Froggy = ({ id, combatEvent, setAttakedPlayer, setDanioJugador }) => {
       // turno del enemigo → ejecuta acción
 
       if(intent === "⚔"){
-        const atk = Math.floor(Math.random()*5 * multi ) + data.level
+        const atk = Math.floor(Math.random()*15 * multi ) + data.level
 
         setPegando(true)
         setAttakedPlayer(true)
