@@ -13,19 +13,19 @@ const Rewards = () => {
       id: 1,
       color: "#A13E39",
       emoji: "⚔",
-      text: "⚔ +2 MAX"
+      text: "⚔ +2 MAX y 1 MIN"
     },
     {
       id: 2,
       color: "#4280A0",
       emoji: "🛡",
-      text: "🛡 +2 MAX"
+      text: "🛡 +2 MAX y 1 MIN"
     },
     {
       id: 3,
       color: "#345303",
       emoji: "💖",
-      text: "💖 +2 MAX"
+      text: "💖 +2 MAX y CURA +2"
     }
   ]
   const [rewards, setRewards] = useState(premios)
@@ -38,6 +38,7 @@ const Rewards = () => {
       setData((prev)=>({
         ...prev,
         maxATK: prev.maxATK + 2,
+        minATK:prev.minATK + 1,
         level: prev.level + 1,
         energy:0,
         attempts: prev.maxEnergy
@@ -51,6 +52,7 @@ const Rewards = () => {
       setData((prev)=>({
         ...prev,
         maxDEF: prev.maxDEF + 2,
+        minDEF:prev.minDEF + 1,
         level: prev.level + 1,
         energy:0,
         attempts: prev.maxEnergy

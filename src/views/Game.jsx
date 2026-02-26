@@ -9,6 +9,7 @@ import Bar from '../components/Bar'
 import { GameContext } from '../context/GameContext'
 import { toast } from 'react-toastify'
 import Froggy from '../components/enemies/Froggy'
+import Fly from '../components/enemies/Fly'
 
 function Game(){
 
@@ -20,7 +21,8 @@ function Game(){
   const enemigos = [
     { id: "bee", component: Bee, name: "Abeja" },
     { id: "fire", component: Fire, name: "Slime de fugeo"},
-    { id: "froggy", component: Froggy, name: "Ranita" }
+    { id: "froggy", component: Froggy, name: "Ranita" },
+    { id: "fly", component: Fly, name: "Mosca" }
   ]
   
 
@@ -118,7 +120,7 @@ function Game(){
   }
 
   return(
-    <div className='game' >
+    <div className='game'>
 
       <Profile />
 

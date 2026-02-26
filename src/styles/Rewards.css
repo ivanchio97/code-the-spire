@@ -11,7 +11,7 @@
   align-items: center;
   background-color: #A56937;
   flex-direction: column;
-  width: 500px;
+  width: 550px;
   height: 350px;
   margin-top: -40px;
   padding: 30px;
@@ -59,14 +59,14 @@
   
 }
 .rewards button{
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border: 4px solid #F5D791;
   background-color: #EACE70;
   border-radius: 10px;
   box-shadow: 0 0 15px #F4BE4D;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 20px;
   text-align: center;
   padding-top: 25px;
   position: relative;
@@ -80,7 +80,7 @@
   position: absolute;
   background-color: rgb(25, 23, 23);
   top:-20px;
-  left: 20px;
+  left: 33px;
   border-radius: 50%;
   line-height: 40px;
   font-size: 25px
